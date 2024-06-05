@@ -1,0 +1,244 @@
+<!DOCTYPE html Sairin Sayyed>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Swift</title>
+<link rel = "icon" href = "icon.png" type = "image/x-icon">
+<style>
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind other content */
+    object-fit: cover; /* Ensure video covers the entire container */
+  }
+body{
+	color:white;
+}
+nav img{
+	float: left;
+}
+ul li{
+	float:right;
+	margin-top:30px;
+	margin-right:40px;
+	list-style-type:none;
+}
+ul li a {
+	color:white;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	text-decoration: none;
+}
+ul li a:hover{
+	color:#5ba4cf;
+}
+.nav{
+	color:white;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	border-radius:30px;
+	background-color:#0378a6 ;
+	padding:5px 15px;
+	text-decoration: none;
+}
+.nav:hover{
+	background-color:#50afcb;
+	color:black;
+	border-radius:30px;
+}
+p, h1, h3{
+	text-align:center;
+}
+ p {
+    text-align:center;
+    margin: 0 auto;
+    color: #50afcb;
+    border: 2px solid #50afcb;
+    width: 150px;
+  }
+ h1{
+	text-align:center;
+	margin: 0 auto;
+	font-size: 300%;
+	font-weight;
+ }
+  h3{
+	text-align:center;
+	margin: 0 auto;
+	font-size: 150%;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+ }
+ .img{
+  text-align:center;
+  filter: drop-shadow(1px 1px 50px rgba(200, 200, 200, 0.5));
+ }
+ .container{
+	text-align:center;
+    box-shadow: 0.2px 0.2px 30px #5ba4cf;
+	border-radius:10px;
+	margin:80px;
+ }
+ .container h2, h2{
+	font-size:40px;
+	text-align:center;
+ }
+  .container h4, h4{
+	font-size:25px;
+	color:#50afcb;
+	text-align:center;
+ }
+ .container1{
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+ }
+ .container1 div{
+	padding: 10px;
+	text-align:left;
+	 margin:10px;
+	 font-size:20px;
+	}
+ .container1 div img{
+	 position: relative;
+    animation: pop 1s infinite;
+ }
+   @keyframes pop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 1200px; /* Adjust the table width as needed */
+    margin-right: 100px;
+	margin-left: 120px;
+	padding: 90px;
+	 font-size:20px;
+  }
+  
+  td { 
+    padding: 20px;
+    text-align: left;
+	opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 6s forwards;
+  }
+   @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .line{
+  	 border-left: 1px solid lightgrey; /* Line between columns */
+  }
+  
+  tr:nth-child(1) {
+    border-top: 1px solid lightgrey; /* Line before the first row */
+  }
+ .div {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+}
+.company {
+	color:white;
+	font-size:17px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	padding:30px;
+	text-decoration: none;
+}
+ .company:hover{
+	color:#5ba4cf;
+}
+</style>
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4"></video>
+<nav>
+<a href="home.html">
+<img src="icon.png" width='15%'></a>
+<ul>
+<li><a href="access.html"  class="nav">Request early access</a></li>
+<li><a href="contact.html">Login</a></li></ul>
+</nav>
+<br><br><br><br><br><br><br><hr style="height:1px;border-width:0;color:black;background-color:grey; display: block; margin: 0 auto;">
+<br><br>
+<p>Coming soon in 2023</P><br><br>
+<h1>A Customizable <br>Backend Platform</h1><br>
+<h3>for Game Studios<br> <img class="img" src="space.png"></h3>
+<div class="container">
+<br>
+<h4>Swift</h4>
+<h2> A unique solution
+<br>for your game studio!</h2>
+<div class="container1">
+<div> <img src="con1.png"><br>Customized backend for every game via pluggable code, data, server and cloud</div>
+<div><img src="con2.png"><br>Managed game backend evolution from prototype to soft-launch to production to sunset</div>
+<div><img src="con3.png"><br>Dedicated environments for dev testing and QA</div>
+<div><img src="con4.png"><br>Cost reporting, insights, and optimization recommendations across games</div>
+<div><img src="con5.png"><br>Beautiful and functional admin tooling for every feature</div>
+<div><img src="con6.png"><br>For everyone in your game studio, Engineers, PMs, Designers, QA etc</div></div>
+</div>
+<a href="home.html">
+<img src="icon.png" style="display: block; margin: 0 auto;" height="150px" width="300px"></a><h2>Whether you are an indie developer or a new game studio, <br>you  now have the same power as the big gaming companies... and more!</h2>
+<br><br>
+<div>
+<h4>Level the playing field in a swift!</h4>
+<h2>Fully customizable, fully transparent,<br>
+fully yours</h2></div>
+
+<table  style="display: block; margin: 0 auto;">
+  <tr>
+    <td><h4 style="text-align:left;"><img src="con7.png" height="20px;">Flexible</h4><br>Ability to integrate your own code, server, data and cloud</td>
+    <td class="line"><h4 style="text-align:left;"><img src="con7.png" height="20px;">Focused</h4><br>Always start on the right software architecture, even for prototypes</td>
+  </tr>
+  <tr>
+    <td><h4 style="text-align:left;"><img src="con7.png" height="20px;">Scalable</h4><br>Highly available, scalable, resilient, data redundant software for your games</td>
+    <td class="line"><h4 style="text-align:left;"><img src="con7.png" height="20px;">Resourceful</h4><br>An ever-growing list of features for your game</td>
+  </tr>
+  <tr>
+    <td><h4 style="text-align:left;"><img src="con7.png" height="20px;">SDKs</h4><br>Custom and memory optimized SDKs for each game in many languages</td>
+    <td class="line"><h4 style="text-align:left;"><img src="con7.png" height="20px;">Smart</h4><br>Monitoring, logging and alerting per game cluster</td>
+  </tr>
+  <tr>
+    <td><h4 style="text-align:left;"><img src="con7.png" height="20px;">On Rails</h4><br>On rails development pipeline per game (dev, staging and production)</td>
+    <td class="line"><h4 style="text-align:left;"><img src="con7.png" height="20px;">APIs</h4><br>Built in service docs, admin tools and API explorer</td>
+  </tr>
+</table><p style="text-align:center;">Q1 2023</P>
+<div class="container">
+<br>
+<div class="div">
+<h2 style="text-align:left; margin-left:100px;"> For Gaming Studios.<br>
+By Industry Experts.</h2>
+<h5 style="text-align:right; margin-top:60px; font-size:18px; margin-left:10px; margin-right:30px;" >Our team has decades of experience building and scaling some of the world's most successful games like FarmVille, Zynga Poker, CityVille and Words with Friends</h5></div>
+<a href="value.html">
+<div class="company">See our company values &#8594;</div></a>
+</div>
+<h3>Backed by</h3><br>
+<img src="games.png" style="display: block; margin: 0 auto;" height="150px" width="300px">
+<h2>"Making games is hard. Making successful games is even harder.<br> Our aim is to get studios to be swift like flying with wings."</h2>
+<h3>- Improvised By Sairin</h3>
+<div class="container">
+<a href="home.html">
+<img src="icon.png" style="display: block; margin: 0 auto;" height="150px" width="300px"></a>
+<h2 style="text-align:center;">Request early access to<br>
+our Alpha</h2>
+<a href="access.html" class="nav">Request early access</a><br><br>
+<br>
+</div>
+<h5 style="text-align:center; display: block; margin: 0 auto;">© Snapser Inc. 2023. All rights reserved.</h5>
+</body>
+</html>

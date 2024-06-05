@@ -1,0 +1,112 @@
+<!DOCTYPE html Sairin Sayyed>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Swift</title>
+<link rel = "icon" href = "icon.png" type = "image/x-icon">
+<style>
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind other content */
+    object-fit: cover; /* Ensure video covers the entire container */
+  }
+body{
+	color:white;
+}
+nav img{
+	float: left;
+}
+ul li{
+	float:right;
+	margin-top:30px;
+	margin-right:40px;
+	list-style-type:none;
+}
+ul li a {
+	color:white;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	text-decoration: none;
+}
+ul li a:hover{
+	color:#5ba4cf;
+}
+.nav{
+	color:white;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	border-radius:30px;
+	background-color:#0378a6 ;
+	padding:5px 15px;
+	text-decoration: none;
+}
+.nav:hover{
+	background-color:#50afcb;
+	color:black;
+	border-radius:30px;
+}
+
+ 
+ .container{
+	text-align:center;
+    box-shadow: 0.2px 0.2px 30px #5ba4cf;
+	border-radius:10px;
+	margin:80px;
+ }
+ .container h2, h2{
+	font-size:40px;
+	text-align:center;
+ }
+  .container h4, h4{
+	font-size:25px;
+	color:#50afcb;
+	text-align:center;
+ }
+ form{
+	padding:30px;
+	font-size:22px;
+ }
+form label{
+	  display: block;
+      font-weight: bold;
+}
+form input{
+	 width: 23%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4"></video>
+<nav>
+<a href="home.html">
+<img src="icon.png" width='15%'></a>
+<ul>
+<li><a href="access.html"  class="nav">Request early access</a></li>
+</nav>
+<br><br><br><br><br><br><br><hr style="height:1px;border-width:0;color:black;background-color:grey; display: block; margin: 0 auto;">
+<br><br>
+<div class="container">
+<a href="home.html">
+<img src="icon.png" style="display: block; margin: 0 auto;" height="150px" width="300px"></a>
+<h2 style="text-align:center;">Login to your portal</h2>
+<form>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" placeholder="Your email.." required><br><br>
+
+  <label style="font-size:15px; margin-left:150px;">Remember Me:<input type="checkbox" id="subscribe" name="subscribe" value="yes"></label><br><br>
+</form>
+<a href="access.html" class="nav">Get verification Code</a><br><br>
+<h4  style="font-size:18px; color:white;">Do not have an account?  <a style="color:#5ba4cf;" href="access.html"> Reach out to us </a> to get an invite.</h4><br>
+</div>
+<h5 style="text-align:center; display: block; margin: 0 auto;">© Snapser Inc. 2023. All rights reserved.</h5>
+</body>
+</html>
